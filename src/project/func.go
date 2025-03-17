@@ -130,7 +130,7 @@ func Movies_List(w http.ResponseWriter, r *http.Request) {
 
 func Show_Version(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(200)
-	message := Message1{Success: true, Text: "version 1.1"}
+	message := Message1{Success: true, Text: "version 1.0"}
 	json_message, _:= json.Marshal(message)
 	fmt.Fprintf(w, "%s", string(json_message))
 }

@@ -7,7 +7,7 @@ services:
     ports:
       - "8080:1386"
     volumes:
-      - digimovie:/data/digimovie
+      - digimovie_data:/data/digimovie
 
 volumes:
-  digimovie:
+  digimovie_data:
